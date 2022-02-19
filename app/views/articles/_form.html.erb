@@ -12,6 +12,17 @@
   <% end %>
 
   <div class="actions">
-    <%= form.submit %>
+    <div class="field">
+      <%= form.text_field :title %>
+    </div>
+     <div class="field">
+      <%= form.text_area :content %>
+    </div>
+    <div class="field">
+      <%= form.file_field :image %>
+    </div>
+    <div class="submit">
+      <%= form.submit %>
+    </div>
   </div>
 <% end %>
